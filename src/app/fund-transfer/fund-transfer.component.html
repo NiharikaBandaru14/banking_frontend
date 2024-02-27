@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Fund Transfer</h2>
+    <form (submit)="transferFunds()">
+      <div class="form-group">
+        <label for="fromAccount">From Account:</label>
+        <select class="form-control" id="fromAccount" [(ngModel)]="fromAccount" name="fromAccount">
+          <option value="1">Savings Account - XXXX-XXXX-1234</option>
+          <option value="2">Checking Account - XXXX-XXXX-5678</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="toAccount">To Account:</label>
+        <input type="text" class="form-control" id="toAccount" [(ngModel)]="toAccount" name="toAccount">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" class="form-control" id="amount" [(ngModel)]="amount" name="amount">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Transfer Funds</button>
+      </div>
+    </form>
+  </div>
+  

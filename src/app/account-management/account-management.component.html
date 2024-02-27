@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Account Management</h2>
+    <div *ngIf="isLoading; else content">
+        <p>Loading account details...</p>
+    </div>
+    <ng-template #content>
+        <div *ngIf="accounts && accounts.length > 0; else noAccounts">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Account Number</th>
+                        <th>Balance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let account of accounts">
+                        <td>{{ account.accountNumber }}</td>
+                        <td>{{ account.balance }}</td>
+                        <td>
+                            <!-- Add buttons for further actions, e.g., view transactions, manage -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <ng-template #noAccounts>
+            <p>No accounts found.</p>
+        </ng-template>
+    </ng-template>
+</div>

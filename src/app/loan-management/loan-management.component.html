@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Loan Management</h2>
+    <!-- Loan management form -->
+    <form (ngSubmit)="applyLoan()">
+      <div class="form-group">
+        <label for="loanType">Loan Type:</label>
+        <select class="form-control" id="loanType" [(ngModel)]="loanType" name="loanType">
+          <option value="personal">Personal Loan</option>
+          <option value="home">Home Loan</option>
+          <option value="car">Car Loan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="amount">Loan Amount:</label>
+        <input type="number" class="form-control" id="amount" [(ngModel)]="loanAmount" name="amount">
+      </div>
+      <div class="form-group">
+        <label for="duration">Loan Duration (months):</label>
+        <input type="number" class="form-control" id="duration" [(ngModel)]="loanDuration" name="duration">
+      </div>
+      <button type="submit" class="btn btn-primary">Apply Loan</button>
+    </form>
+  </div>
+  

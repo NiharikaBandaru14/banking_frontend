@@ -1,0 +1,44 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Styles for navigation */
+  .navigation {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .navigation a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  /* Styles for header */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  /* Styles for paragraph */
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+  }
+  
